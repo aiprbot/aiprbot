@@ -3,7 +3,9 @@
 	"version": "0.0.0",
 	"scripts": {
 		"dev": "bun run --watch app/index.ts",
-		"fix": "biome check --write ."
+		"fix": "biome check --write .",
+		"tsc": "tsc --noEmit",
+		"env": "cp .env.example .env"
 	},
 	"dependencies": {
 		"@octokit/app": "^16.1.1",
@@ -13,7 +15,8 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.0",
-		"bun-types": "latest"
+		"bun-types": "latest",
+		"typescript": "^5.9.3"
 	},
 	"module": "app/index.ts"
 }
