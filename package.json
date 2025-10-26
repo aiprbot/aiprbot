@@ -5,7 +5,8 @@
 		"dev": "bun run --watch app/index.ts",
 		"fix": "biome check --write .",
 		"tsc": "tsc --noEmit",
-		"env": "cp .env.example .env"
+		"env": "cp .env.example .env",
+		"build": "tsdown app/index.ts -d api --dts"
 	},
 	"dependencies": {
 		"@octokit/app": "^16.1.1",
@@ -16,7 +17,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.0",
 		"bun-types": "latest",
+		"tsdown": "^0.15.10",
 		"typescript": "^5.9.3"
-	},
-	"module": "app/index.ts"
+	}
 }
