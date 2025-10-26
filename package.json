@@ -1,0 +1,19 @@
+{
+	"name": "aiprbot",
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "bun run --watch app/index.ts",
+		"fix": "biome check --write ."
+	},
+	"dependencies": {
+		"@octokit/app": "^16.1.1",
+		"@openrouter/ai-sdk-provider": "^1.2.0",
+		"ai": "^5.0.80",
+		"elysia": "latest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.0",
+		"bun-types": "latest"
+	},
+	"module": "app/index.ts"
+}
