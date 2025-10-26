@@ -6,7 +6,7 @@
 		"fix": "biome check --write .",
 		"tsc": "tsc --noEmit",
 		"env": "cp .env.example .env",
-		"build": "tsdown app/index.ts -d api --dts"
+		"build": "tsdown app/index.ts -d api"
 	},
 	"dependencies": {
 		"@octokit/app": "^16.1.1",
