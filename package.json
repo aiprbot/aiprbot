@@ -19,8 +19,5 @@
 		"bun-types": "latest",
 		"tsdown": "^0.15.10",
 		"typescript": "^5.9.3"
-	},
-	"engines": {
-		"node": "22.x"
 	}
 }
